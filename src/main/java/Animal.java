@@ -1,15 +1,15 @@
 public class Animal {
     String name;
-    public Animal () {
+
+    public Animal() {
     }
-    public Animal (String name) {
+    public Animal(String name) {
         this.name = name;
     }
-    public void run (){
-        System.out.println(name + " бежит");
+    void run() {
+        System.out.println("Животное бежит");
     }
-    public void swim (){
-        System.out.println(name + " плывет");
+    void swim() {
+        System.out.println("Животное плывет");
     }
-
 }
