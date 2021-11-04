@@ -1,15 +1,23 @@
 public class Animal {
-    String name;
+    private String name;
+    int res;
+    int resS;
 
-    public Animal() {
-    }
     public Animal(String name) {
         this.name = name;
     }
-    void run() {
+
+    public void run(double length) {
         System.out.println("Животное бежит");
+        if (length > res) System.out.println(name + " не может пробежать такую дистанцию.");
+        else if (length <= 0) System.out.println(name + " осуждающе смотрит -_-");
+        else if (length <= res) System.out.println(name + " пробежал(a) " + length + " метров");
     }
-    void swim() {
+
+    public void swim(double length) {
         System.out.println("Животное плывет");
+        if (length > resS) System.out.println(name + " не может проплыть такую дистанцию.");
+        else if (length <= 0) System.out.println(name + " осуждающе смотрит -_-");
+        else if (length <= resS) System.out.println(name + " проплыл(a) " + length + " метров");
     }
 }
